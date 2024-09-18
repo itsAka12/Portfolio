@@ -1,0 +1,461 @@
+body {
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #d5dade 0%, #84868a 74%);
+  color: #fff;
+}
+
+/* style for the title bar */
+.logo {
+  width: 200px;
+
+}
+
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 40px;
+  padding: 3px;
+  color: #fff;
+  row-gap: 50px;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  max-width: fit-content;
+  background-color: #9a9797;
+  border: 2px solid #9a9797;
+  box-shadow: 0 4px 8px #393235;
+  border-radius: 30px;
+  padding: 3px 8px;
+  margin: 10px;
+  margin-top: 0px;
+}
+
+.navbar ul li {
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  margin: 2px;
+  cursor: pointer;
+  color: #000000;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.navbar ul li a:hover {
+  border-radius: 20px;
+  color: #f2eff0;
+  text-decoration: underline;
+  transition: ease-in-out 0.3s all;
+}
+
+.navbar a.active {
+  background-color: #f2eff0;
+  text-decoration: underline;
+}
+
+/* style for#home page */
+#home-page {
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 60px 40px;
+  padding: 5px;
+}
+
+#home-page img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  border: black 2px;
+  margin-right: 75px;
+  box-shadow: 0 4px 8px #786d72;
+}
+
+.profile-details {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#home-page .hello {
+  font-size: 15px;
+}
+
+#home-page .intro {
+  font-size: 25px;
+
+}
+
+#home-page .desc {
+  font-size: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 10px;
+}
+
+.btn {
+  width: 100px;
+  text-align: center;
+  border-radius: 30px;
+  border: 2px solid#000000;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  padding: 2px;
+  margin: 5px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #ffffff;
+  border: 2px solid#ffffff;
+  color: #000000;
+  transition: ease-in-out 0.5s all;
+}
+
+/* style for about page */
+#about-page {
+  margin: 0 0;
+  color: #fff;
+  background-color: #565454;
+  padding: 40px;
+}
+
+.title {
+  font-size: 50px;
+  margin: 50px 28px;
+  border-left: 10px solid#ED004C;
+  height: 50px;
+  gap: 2px;
+}
+
+span {
+  color: #ED004C;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+#about-page p {
+  font-size: 15px;
+  padding: 5px;
+  margin-left: 20px;
+  line-height: 1.8;
+  font-family: 'Dosis', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#about-page h4 {
+  font-size: 15px;
+  padding: 5px;
+  margin-left: 20px;
+}
+
+/* style for project page */
+#project-page {
+  margin: 0;
+  padding: 40px;
+}
+
+.project-section {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-section ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  flex-wrap: wrap;
+  column-gap: 100px;
+
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  width: 250px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  height: 70%;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ED004C;
+}
+
+.card:hover .overlay {
+  opacity: 0.8;
+}
+
+.text {
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  word-wrap: normal;
+}
+
+/* Style the hobby-page container */
+#hobby-page {
+  background-color: #565454;
+  padding: 40px;
+}
+
+.hobby-section {
+  display: flex;
+  justify-content: center;
+
+}
+
+.hobby-section ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.hobby-section li {
+  margin-right: 10px;
+}
+
+.logof {
+  height: 200px;
+  width: 400px;
+}
+
+.cards {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  margin: 40px;
+}
+
+
+.cards img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+/* style for footer */
+
+footer {
+  background-image: linear-gradient(315deg, #d5dade 0%, #84868a 74%);
+}
+
+.contact-page {
+  text-align: center;
+  margin-bottom: 0;
+  color: #fff;
+  padding: 40px;
+
+}
+
+
+.contact-page .footer-content {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.contact-page .footer-content li:hover {
+  transform: scale(1.8);
+}
+
+
+/* Responsive adjustments for tablets and small screens */
+@media (max-width: 850px) {
+  .logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .navbar ul {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #home-page img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+
+  #home-page {
+    flex-direction: column-reverse;
+    margin: 30px 10px;
+  }
+
+  .profile-details {
+    text-align: center;
+  }
+
+  #home-page .hello,
+  #home-page .intro,
+  #home-page .desc {
+    margin: 10px 0;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .project-section ul {
+    grid-template-columns: repeat(2, 1fr);
+    align-self: center;
+
+  }
+
+  #hobby-page {
+    padding: 10px;
+    margin: 5px;
+  }
+
+  .hobby-section {
+    justify-content: flex-start;
+  }
+
+  .cards {
+    margin: 10px;
+  }
+}
+
+
+
+/* Responsive adjustments for mobile phones */
+@media screen and (max-width: 576px) {
+  .logo {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .navbar {
+    flex-direction: column;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 10px 0;
+
+  }
+
+  .navbar ul {
+    gap: 6px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  #home-page img {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .project-section ul {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .hobby-section {
+    flex-wrap: wrap;
+  }
+
+  .hobby-section ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  #home-page img {
+    width: 100%;
+    max-width: none;
+  }
+
+  #home-page .profile-details {
+    margin: 10px;
+  }
+
+  #home-page .profile-img {
+    margin-left: 0;
+  }
+
+  #about-page {
+    padding: 20px;
+  }
+
+  #about-page h3 {
+    margin: 20px 10px;
+  }
+
+  #project-page {
+    padding: 20px;
+  }
+
+  .card {
+    margin: 10px 0;
+  }
+
+  .logof {
+    height: 150px;
+    width: 200px;
+  }
+
+  .contact-page {
+    padding: 20px;
+  }
+}
